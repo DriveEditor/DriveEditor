@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DriveEditor is the first diffusion-based framework for versatile object editing in videos of driving scenarios.">
+  <meta name="keywords" content="DriveEditor, Video Editing, Diffusion Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta property="og:title" content="DriveEditor: A Unified 3D Information-Guided Framework for Controllable Object Editing in Driving Scenes"/>
+
+
+  <meta name="twitter:title" content="DriveEditor: A Unified 3D Information-Guided Framework for Controllable Object Editing in Driving Scenes">
+  <meta name="twitter:description" content="DriveEditor is the first diffusion-based framework for versatile object editing in videos of driving scenarios.">
+
+  <meta name="twitter:card" content="summary_large_image">
+ 
+  
+  <title>DriveEditor: A Unified 3D Information-Guided Framework for Controllable Object Editing in Driving Scenes</title>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">DriveEditor: A Unified 3D Information-Guided Framework for Controllable Object Editing in Driving Scenes</h1>
+          
+
+
+<div class="columns is-centered">
+  <div class="column is-full-width">
+    <hr class="divider" />
+    <!-- <div class="content has-text-justified">
+        Visual illustration of our method’s ability to semantically remove objects. </p> -->
+        <table width="2000" border="0" align="center">
+            <tbody>
+                    <tr>
+                <td align="center">Original Video</td>
+                <td></td>
+                <td align="center">Deletion</td>
+                <td></td>
+                <td align="center">Insertion</td>
+                <td></td>
+                <td align="center">Replacement</td>
+                <td></td>
+                <td align="center">Repositioning</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="center"><video width="500" controls="controls" autoplay muted playsinline loop>
+                    <source src="./static/videos/vis1/origin.mp4" type="video/mp4" />
+                </video></td>
+                <td align="center"><video width="50">
+                <td align="center"><video width="500" controls="controls" autoplay muted playsinline loop>
+                    <source src="./static/videos/vis1/deletion.mp4" type="video/mp4" />
+                </video></td>
+                <td align="center"><video width="50">
+                  <td align="center"><video width="500" controls="controls" autoplay muted playsinline loop>
+                      <source src="./static/videos/vis1/insertion.mp4" type="video/mp4" />
+                  </video></td>
+                <td align="center"><video width="50">
+                  <td align="center"><video width="500" controls="controls" autoplay muted playsinline loop>
+                      <source src="./static/videos/vis1/replacement.mp4" type="video/mp4" />
+                  </video></td>
+                <td align="center"><video width="50">
+                  <td align="center"><video width="500" controls="controls" autoplay muted playsinline loop>
+                      <source src="./static/videos/vis1/repositioning.mp4" type="video/mp4" />
+                  </video></td>
+            </tr>
+
+            </tr>
+            </tbody>
+        </table>
+        
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+          <br>
+          </b> DriveEditor enables user-friendly repositioning, insertion, replacement, and deletion within a unified framework. 
+It precisely controls an object's position and orientation based on the 3D bounding box, 
+and maintains high-fidelity appearance attributes of the object from a single reference image.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Vision-centric autonomous driving systems require diverse training data, which can be augmented by manipulating object positions and appearances within existing scene captures. 
+            While recent advancements in video diffusion models (VDMs) have shown promise in video editing, their application to specific object manipulation in driving scenarios remains challenging due to imprecise positional control and difficulties in preserving high-fidelity object appearances. To enrich the diversity of driving scenarios, we introduces DriveEditor, the first diffusion-based framework for object editing in driving videos. DriveEditor offers a unified framework for comprehensive object editing operations, including repositioning, replacement, deletion, and insertion. These diverse manipulations are all achieved through a shared set of varying  inputs, processed by identical position control module and appearance maintenance module. The position control module projects the given 3D bounding box while preserving depth information and hierarchically injects it into the diffusion process, enabling precise control over object position and orientation. The appearance maintenance module preserves consistent attribute with a single reference image by employing a three-tiered approach: low-level detail preservation, high-level semantic maintenance, and the integration of 3D priors from a novel view synthesis model. Extensive qualitative and quantitative evaluations on the nuScenes dataset demonstrate DriveEditor's high fidelity and controllability in generating diverse autonomous driving scenes.The code will be made publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ end of Abstract -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview-->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <hr class="divider" />
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            (a) High-level overview of DriveEditor. (b) Diagram of the training pipeline of DriveEditor. The cross attention
+injection path is omitted for brevity. Three distinct levels of appearance control are established based on the single reference
+image: low-level details preservation, high-level semantics maintenance, and incorporation of 3D priors derived from the
+frozen SV3D Unet. For position control, we perform a projection that preserves depth information, followed by the Pose
+Controller to extract multi-scale features and inject them into the Video UNet. These injections involve three distinct paths.
+          </p>
+        </div>
+        <div class="two-col-image">
+          <img src="./static/images/pipeline.png" type="image/png">
+        </div>
+      </div>
+    </div>
+    <!-- End of Method Overview-->
+    
+    
+   
+   
+
+</body>
+</html>
